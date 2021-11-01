@@ -4,7 +4,7 @@ This project automatically reserves a spot at the uOttawa gyms given a set of da
 
 It is built as a modified version of photonized's scheduler which you can check out [here](https://github.com/photonized/uOttawa-Gym-Scheduler).  
 
-Unlike photonized's scheduler, this is a completely hands-free program and once you have it setup, you'll never have to modify the code or rerun the docker container.  You can also set it to run for multiple users by using threading.
+This is a completely hands-free program and once you have it setup, you'll never have to modify the code or rerun the docker container.  You can also set it to run for multiple users by using threading.
 
 ## Usage
 
