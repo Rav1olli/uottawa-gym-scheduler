@@ -18,6 +18,7 @@ This is a completely hands-free program and once you have it setup, you'll never
 You can insert as many Days/Times as you'd like on each new line.  
 To end a user entry, simply make sure there is an empty line after all of your day/time inputs.
 Make sure there is an empty line after the last entry, so just press enter twice after your last entry.
+
 An example of the proper format is shown in gym.txt.
 
 2. With docker installed, build the docker container using: ```docker build uottawa-gym-scheduler .```
