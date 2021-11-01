@@ -136,7 +136,7 @@ def user_thread(name, barcode, pin, times):
             found = True
             request_day = time[0]
             request_time = time[1]
-            # auto_request(s, updated_df, name, request_day, request_time, baseline_link)
+            auto_request(s, updated_df, name, request_day, request_time, baseline_link)
 
     if found == False:
         print("No required reservation found for "+name)
@@ -200,12 +200,10 @@ def main():
     
     print("Program finished.")
           
-# schedule.every().day.at("20:59:50").do(main)
+schedule.every().day.at("20:59:50").do(main)
 
-##while True:
-##    schedule.run_pending()
-##    current_time = datetime.now().strftime("%H:%M:%S")
-##    print("Scheduler is sleeping. Current time is "+ current_time)
-##    time.sleep(15)
-
-main()
+while True:
+    schedule.run_pending()
+    current_time = datetime.now().strftime("%H:%M:%S")
+    print("Scheduler is sleeping. Current time is "+ current_time)
+    time.sleep(15)
