@@ -21,6 +21,6 @@ Make sure there is an empty line after the last entry, so just press enter twice
 
 An example of the proper format is shown in gym.txt.
 
-2. With docker installed, build the docker container using: ```docker build uottawa-gym-scheduler .```
+2. With docker installed, build the docker container using: ```docker build -t uottawa-gym-scheduler .```
 3. Next run the container with: ```docker run --name uottawa-gym-scheduler uottawa-gym-scheduler```
 4. All done! Now you have a fully automated gym scheduler so you never have to worry about booking.
